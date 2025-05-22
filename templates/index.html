@@ -3,15 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Web Flask</title>
+    <title>Julian Palacios | Perfil Profesional</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Soy Julian Palacios!</h1>
-        <p class="subtitle">Proyecto de Prueba en Render</p>
-        <button class="btn">¡Explora más!</button>
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="https://preview.redd.it/give-me-your-honest-opinion-on-yachiru-v0-hafphjihe3fd1.jpeg?auto=webp&s=e7996ec9181820a0585491914ab2103e32a1412a" alt="Julian Palacios">
+            </div>
+            <div class="profile-meta">
+                <h1>Julian Palacios</h1>
+                <p class="headline">Desarrollador Full Stack | Especialista en Flask</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Bogotá DC, Colombia</p>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="about-section">
+                <h2><i class="fas fa-user"></i> Sobre Mí</h2>
+                <p>Desarrollador apasionado con 3+ años de experiencia creando soluciones web robustas. Especializado en Python (Flask/Django) y JavaScript moderno. Me encanta transformar ideas en productos funcionales y escalables.</p>
+            </div>
+
+            <div class="skills-section">
+                <h2><i class="fas fa-code"></i> Habilidades</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">APIs REST</span>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
+                <div class="experience-item">
+                    <h3>Desarrollador Backend</h3>
+                    <p class="company">Tech Solutions SA · Jornada completa</p>
+                    <p class="duration">Ene 2021 - Presente · 2 años 6 meses</p>
+                    <ul>
+                        <li>Desarrollo y mantenimiento de APIs REST con Flask</li>
+                        <li>Implementación de sistemas de autenticación JWT</li>
+                        <li>Optimización de consultas SQL mejorando rendimiento en 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-footer">
+            <button class="contact-btn"><i class="fas fa-envelope"></i> Contactar</button>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

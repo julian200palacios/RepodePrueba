@@ -3,67 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julian Palacios | Perfil Profesional</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Julian Palacios | Data Specialist & Industrial Engineer</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div class="profile-card">
-        <div class="profile-header">
-            <div class="profile-avatar">
-                <img src="https://preview.redd.it/give-me-your-honest-opinion-on-yachiru-v0-hafphjihe3fd1.jpeg?auto=webp&s=e7996ec9181820a0585491914ab2103e32a1412a" alt="Julian Palacios">
-            </div>
-            <div class="profile-meta">
+    <div class="container">
+        <!-- Sidebar - Información personal -->
+        <aside class="sidebar" data-aos="fade-right">
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="https://preview.redd.it/give-me-your-honest-opinion-on-yachiru-v0-hafphjihe3fd1.jpeg?auto=webp&s=e7996ec9181820a0585491914ab2103e32a1412a" alt="Julian Palacios" class="profile-avatar">
+                    <div class="status-badge"></div>
+                </div>
                 <h1>Julian Palacios</h1>
-                <p class="headline">Desarrollador Full Stack | Especialista en Flask</p>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Bogotá DC, Colombia</p>
+                <p class="title">Data Specialist & Industrial Engineer</p>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bogotá DC, Colombia</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>21/03/2002</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-flag"></i>
+                        <span>Colombiano</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link portfolio">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+                
+                <button class="download-cv">
+                    <i class="fas fa-download"></i> Descargar CV
+                </button>
             </div>
-        </div>
-
-        <div class="profile-content">
-            <div class="about-section">
-                <h2><i class="fas fa-user"></i> Sobre Mí</h2>
-                <p>Desarrollador apasionado con 3+ años de experiencia creando soluciones web robustas. Especializado en Python (Flask/Django) y JavaScript moderno. Me encanta transformar ideas en productos funcionales y escalables.</p>
-            </div>
-
-            <div class="skills-section">
-                <h2><i class="fas fa-code"></i> Habilidades</h2>
+            
+            <div class="sidebar-section">
+                <h3 class="section-title">Habilidades Clave</h3>
                 <div class="skills-container">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Flask</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">APIs REST</span>
+                    <div class="skill-category">
+                        <h4>Análisis de Datos</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Power BI & Tableau</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Python (Pandas, Dash)</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>SQL & Power Query</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                            <span>92%</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Automatización (VBA)</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                            <span>88%</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="experience-section">
-                <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
-                <div class="experience-item">
-                    <h3>Desarrollador Backend</h3>
-                    <p class="company">Tech Solutions SA · Jornada completa</p>
-                    <p class="duration">Ene 2021 - Presente · 2 años 6 meses</p>
-                    <ul>
-                        <li>Desarrollo y mantenimiento de APIs REST con Flask</li>
-                        <li>Implementación de sistemas de autenticación JWT</li>
-                        <li>Optimización de consultas SQL mejorando rendimiento en 40%</li>
-                    </ul>
+            
+            <div class="sidebar-section">
+                <h3 class="section-title">Idiomas</h3>
+                <div class="language-item">
+                    <span>Español</span>
+                    <div class="language-level native"></div>
+                </div>
+                <div class="language-item">
+                    <span>Inglés</span>
+                    <div class="language-level advanced"></div>
                 </div>
             </div>
-        </div>
-
-        <div class="profile-footer">
-            <button class="contact-btn"><i class="fas fa-envelope"></i> Contactar</button>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            
+            <div class="sidebar-section">
+                <h3 class="section-title">Aficiones</h3>
+                <div class="hobbies-container">
+                    <div class="hobby-item">
+                        <i class="fas fa-medal"></i>
+                        <span>Gimnasia Artística</span>
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Desarrollo</span>
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Análisis de Datos</span>
+                    </div>
+                </div>
             </div>
-        </div>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="main-content" data-aos="fade-left">
+            <!-- Sección "Sobre mí" -->
+            <section class="content-section about-section">
+                <h2 class="section-header">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Sobre Mí</span>
+                </h2>
+                <div class="section-content">
+                    <p>Ingeniero Industrial y especialista en análisis de datos con experiencia en el desarrollo de soluciones tecnológicas y automatización de procesos. Apasionado por transformar datos en insights accionables que impulsen la toma de decisiones estratégicas.</p>
+                    
+                    <div class="highlight-box">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>+15 Proyectos</h4>
+                                <p>Dashboard y soluciones implementadas</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>+500 Horas</h4>
+                                <p>Ahorradas mediante automatización</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>100%</h4>
+                                <p>Procesos optimizados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Experiencia -->
+            <section class="content-section experience-section">
+                <h2 class="section-header">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experiencia Laboral</span>
+                </h2>
+                <div class="section-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-period">Dic 2023 - May 2025</div>
+                            <div class="timeline-content">
+                                <h3>Especialista en Datos y Automatización</h3>
+                                <p class="company">Bogotá D.C.</p>
+                                <ul class="achievements">
+                                    <li><i class="fas fa-check-circle"></i> Lideré la implementación de soluciones de almacenamiento en la nube y estandarización de información</li>
+                                    <li><i class="fas fa-check-circle"></i> Desarrollé aplicaciones de escritorio y web para visualización de datos con Python (Dash, Flask)</li>
+                                    <li><i class="fas fa-check-circle"></i> Creé scripts de automatización que redujeron tiempos de procesos en un 70%</li>
+                                    <li><i class="fas fa-check-circle"></i> Implementé un chatbot corporativo para soporte interno</li>
+                                </ul>
+                                <div class="project-link">
+                                    <a href="https://drive.google.com/drive/folders/1SJUJ2HDPicTSr7q9BbrZsK7RSldRMaWv" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Ver proyectos realizados
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-period">May 2023 - Dic 2023</div>
+                            <div class="timeline-content">
+                                <h3>Analista de Trade Marketing</h3>
+                                <p class="company">Bogotá D.C.</p>
+                                <ul class="achievements">
+                                    <li><i class="fas fa-check-circle"></i> Implementé dashboards en Python y Power BI para seguimiento de ventas Sell Out</li>
+                                    <li><i class="fas fa-check-circle"></i> Desarrollé modelos de abastecimiento en Excel con DAX para prevenir sobrestock</li>
+                                    <li><i class="fas fa-check-circle"></i> Realicé forecast y proyecciones de metas a nivel nacional por punto de venta</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-period">Dic 2022 - Abr 2023</div>
+                            <div class="timeline-content">
+                                <h3>Coordinador de Abastecimiento</h3>
+                                <p class="company">Bogotá D.C.</p>
+                                <ul class="achievements">
+                                    <li><i class="fas fa-check-circle"></i> Lideré la implementación de herramientas de visualización para toma de decisiones</li>
+                                    <li><i class="fas fa-check-circle"></i> Desarrollé dashboards automatizados con Power Pivot y VBA</li>
+                                    <li><i class="fas fa-check-circle"></i> Optimicé el proceso de abastecimiento mediante análisis de datos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Educación -->
+            <section class="content-section education-section">
+                <h2 class="section-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Educación</span>
+                </h2>
+                <div class="section-content">
+                    <div class="education-item">
+                        <div class="education-period">En curso</div>
+                        <div class="education-content">
+                            <h3>Ingeniería Industrial</h3>
+                            <p class="institution">Universidad Nacional de Colombia</p>
+                            <p>Enfoque en big data, simulación e integración de sistemas para la industria 4.0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-period">2022</div>
+                        <div class="education-content">
+                            <h3>Tecnólogo en Gestión Administrativa</h3>
+                            <p class="institution">SENA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-period">2025</div>
+                        <div class="education-content">
+                            <h3>Gobierno de Datos</h3>
+                            <p class="institution">Curso especializado</p>
+                            <p>Estructuración y gestión de datos de calidad para toma de decisiones</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Proyectos -->
+            <section class="content-section projects-section">
+                <h2 class="section-header">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Proyectos Destacados</span>
+                </h2>
+                <div class="section-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Sistema de Dashboards Automatizados</h3>
+                            <p>Plataforma integral para visualización de KPIs con actualización automática</p>
+                            <div class="project-tech">
+                                <span>Power BI</span>
+                                <span>Python</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Chatbot Corporativo</h3>
+                            <p>Solución de IA para soporte interno y consulta de información</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Automatización de Procesos</h3>
+                            <p>Scripts para automatizar reportes y procesos administrativos</p>
+                            <div class="project-tech">
+                                <span>VBA</span>
+                                <span>Power Automate</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Referencias -->
+            <section class="content-section references-section">
+                <h2 class="section-header">
+                    <i class="fas fa-users"></i>
+                    <span>Referencias</span>
+                </h2>
+                <div class="section-content">
+                    <div class="references-grid">
+                        <div class="reference-card">
+                            <h3>Johani Herreño Palacios</h3>
+                            <p class="reference-position">Personal</p>
+                            <div class="reference-contact">
+                                <i class="fas fa-phone"></i>
+                                <span>302 583 0404</span>
+                            </div>
+                            <div class="reference-contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>Jherreno57@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="reference-card">
+                            <h3>Adriana Caicedo</h3>
+                            <p class="reference-position">IYCSA</p>
+                            <div class="reference-contact">
+                                <i class="fas fa-phone"></i>
+                                <span>(601) 208 8080</span>
+                            </div>
+                            <div class="reference-contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>recursos.humanos@iycsa.com.co</span>
+                            </div>
+                        </div>
+                        
+                        <div class="reference-card">
+                            <h3>Vanesa Viloria</h3>
+                            <p class="reference-position">Forza Outsourcing</p>
+                            <div class="reference-contact">
+                                <i class="fas fa-phone"></i>
+                                <span>315 662 2720</span>
+                            </div>
+                            <div class="reference-contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>auxrecursoshumanosforza@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
 </body>
 </html>
